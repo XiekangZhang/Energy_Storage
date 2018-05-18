@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:1.0.1.Final'
+    compile 'org.jboss.spec.javax.servlet.jsp:jboss-jsp-api_2.3_spec:1.0.3.Final'
+    compile 'org.jboss.spec.javax.servlet:jboss-servlet-api_4.0_spec:1.0.0.Final'
+}
