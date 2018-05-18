@@ -8,6 +8,12 @@ public abstract class Expectation {
     protected Map<Integer, Double> expectationMap = new HashMap<Integer, Double>();
     protected Double expectation;
 
+    /**
+     * to create expectation of price or demand
+     * @param start start price or demand
+     * @param end end price or demand
+     * @return an expectation matrix
+     */
     public Map<Integer, Double> createExpectation(Integer start, Integer end) {
         expectation = 1.0 / (end - start + 1.0);
         for (int i = start; i <= end; i++) {

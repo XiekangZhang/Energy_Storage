@@ -7,6 +7,13 @@ public class Battery {
     private Integer outputLimitation;
     private Integer inputLimitation;
 
+    /**
+     * The constructor of class battery
+     * @param capacity depicts the capacity of a battery
+     * @param efficiency shows the efficiency of a battery
+     * @param outputLimitation constraints the available sellable amount to the market
+     * @param inputLimitation constraints the buyable amount from the market
+     */
     public Battery(Integer capacity, Double efficiency, Integer outputLimitation, Integer inputLimitation) {
         this.capacity = capacity;
         this.efficiency = efficiency;
