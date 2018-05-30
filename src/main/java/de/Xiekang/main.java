@@ -7,6 +7,5 @@ public class main {
     public static void main(String[] args) {
         Market market = new Market();
         market.createExpectation(1, 5);
-        market.toString();
     }
 }

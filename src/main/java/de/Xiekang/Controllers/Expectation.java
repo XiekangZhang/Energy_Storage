@@ -3,15 +3,21 @@ package main.java.de.Xiekang.Controllers;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * TODO
+ * The expectation is static.
+ * The expectation will always change if the time proceeds.
+ * Change that into dynamic maybe according to the actual market's price.
+ */
 public abstract class Expectation {
 
     protected Map<Integer, Map<Integer, Double>> expectationMap = new HashMap<>();
     protected Map<Integer, Double> expectationContents = new HashMap<>();
-    protected Double expectation;
+    protected double expectation;
 
-    public Map<Integer, Map<Integer, Double>> createExpectation(Integer startPrice, Integer endPrice) {
+    public Map<Integer, Map<Integer, Double>> createExpectation(int startPrice, int endPrice) {
         expectation = 1 / Math.pow((endPrice - startPrice + 1), 2);
-        for (Integer i = 1; i <= endPrice - startPrice + 1; i++) {
+        for (int i = 1; i <= endPrice - startPrice + 1; i++) {
             expectationContents.put(i, expectation);
             expectationMap.put(i, expectationContents);
         }

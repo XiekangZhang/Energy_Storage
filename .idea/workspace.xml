@@ -3,14 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="3e45109c-ef8b-4f4b-932d-0e15f8735974" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/DecisionTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/DecisionTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/Expectation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/Expectation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/ValueIteration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/ValueIteration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Battery.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Battery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Market.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Market.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/StorageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/StorageModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/test/java/de/Xiekang/Models/MarketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/test/java/de/Xiekang/Models/MarketTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java" afterDir="false" />
     </list>
@@ -23,69 +27,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Expectation.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Market.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DecisionTree.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MarketTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="90" selection-start-line="28" selection-start-column="90" selection-end-line="28" selection-end-column="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>String</find>
+      <find>int</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,11 +55,17 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/MarketTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/MarketTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Decisions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" />
       </list>
     </option>
   </component>
@@ -124,8 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,12 +129,20 @@
             </path>
             <path>
               <item name="Energy_Storage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Energy_Storage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Energy_Storage" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,20 +187,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MarketTest.createExpectation">
+  <component name="RunManager" selected="JUnit.BatteryTest.stayEnergy">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.de.Xiekang.main" />
-      <module name="Energy_Storage" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.java.de.Xiekang.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration name="Gradle" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -321,6 +278,98 @@
         </option>
       </method>
     </configuration>
+    <configuration name="BatteryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Energy_Storage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.de.Xiekang.Models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Models" />
+      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Models.BatteryTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BatteryTest.buyEnergy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Energy_Storage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.de.Xiekang.Models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Models" />
+      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Models.BatteryTest" />
+      <option name="METHOD_NAME" value="buyEnergy" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BatteryTest.sellEnergy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Energy_Storage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.de.Xiekang.Models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Models" />
+      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Models.BatteryTest" />
+      <option name="METHOD_NAME" value="sellEnergy" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="BatteryTest.stayEnergy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Energy_Storage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.de.Xiekang.Models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Models" />
+      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Models.BatteryTest" />
+      <option name="METHOD_NAME" value="stayEnergy" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="MarketTest.createExpectation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Energy_Storage" />
       <extension name="coverage">
@@ -385,13 +434,19 @@
     <list>
       <item itemvalue="Gradle.Gradle" />
       <item itemvalue="JBoss Server.JBoss " />
-      <item itemvalue="Application.main" />
       <item itemvalue="JUnit.MarketTest.createExpectation" />
+      <item itemvalue="JUnit.BatteryTest" />
+      <item itemvalue="JUnit.BatteryTest.buyEnergy" />
+      <item itemvalue="JUnit.BatteryTest.sellEnergy" />
+      <item itemvalue="JUnit.BatteryTest.stayEnergy" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BatteryTest.stayEnergy" />
+        <item itemvalue="JUnit.BatteryTest.sellEnergy" />
+        <item itemvalue="JUnit.BatteryTest.buyEnergy" />
+        <item itemvalue="JUnit.BatteryTest" />
         <item itemvalue="JUnit.MarketTest.createExpectation" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -407,51 +462,60 @@
       <updated>1526644193867</updated>
       <workItem from="1526644199559" duration="502000" />
       <workItem from="1526644708460" duration="6005000" />
-      <workItem from="1527659561585" duration="3307000" />
+      <workItem from="1527659561585" duration="6952000" />
+      <workItem from="1527673713254" duration="3053000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 29m 39s.xml">
+    <history-entry file="MarketTest_createExpectation - 2018.05.30 at 12h 28m 15s.xml">
       <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 30m 08s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest - 2018.05.30 at 12h 31m 48s.xml">
+      <configuration name="BatteryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 31m 00s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest_buyEnergy - 2018.05.30 at 12h 32m 23s.xml">
+      <configuration name="BatteryTest.buyEnergy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 31m 15s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest - 2018.05.30 at 12h 33m 28s.xml">
+      <configuration name="BatteryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 37m 56s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest - 2018.05.30 at 12h 34m 43s.xml">
+      <configuration name="BatteryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 38m 58s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest - 2018.05.30 at 12h 35m 00s.xml">
+      <configuration name="BatteryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 39m 48s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest - 2018.05.30 at 12h 37m 16s.xml">
+      <configuration name="BatteryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 40m 00s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest_buyEnergy - 2018.05.30 at 12h 37m 36s.xml">
+      <configuration name="BatteryTest.buyEnergy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.18 at 15h 40m 09s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest_sellEnergy - 2018.05.30 at 12h 37m 41s.xml">
+      <configuration name="BatteryTest.sellEnergy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTest_createExpectation - 2018.05.30 at 09h 36m 55s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    <history-entry file="BatteryTest_stayEnergy - 2018.05.30 at 12h 37m 44s.xml">
+      <configuration name="BatteryTest.stayEnergy" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9814000" />
+    <option name="totallyTimeSpent" value="16512000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1028" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32975295" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
@@ -459,11 +523,11 @@
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32867885" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32867885" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -487,6 +551,68 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -500,8 +626,6 @@
           <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -573,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -587,59 +704,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="60">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="120">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="90" selection-start-line="28" selection-start-column="90" selection-end-line="28" selection-end-column="90" />
+        <state relative-caret-position="300">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        <state relative-caret-position="195">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Libraries/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="255" selection-start-line="255" selection-end-line="255" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-318">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1251#1252#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1365#1366#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1717#1718#0" expanded="true" />
+            <element signature="e#1781#1782#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2033#2034#0" expanded="true" />
           </folding>
         </state>
       </provider>

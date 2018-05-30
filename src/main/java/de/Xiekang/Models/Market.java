@@ -8,29 +8,29 @@ import main.java.de.Xiekang.Controllers.Expectation;
  */
 public class Market extends Expectation {
 
-    private Integer startsPrice;
-    private Integer endsPrice;
+    private int startsPrice;
+    private int endsPrice;
 
     public Market() {}
 
-    public Market(Integer startsPrice, Integer endsPrice) {
+    public Market(int startsPrice, int endsPrice) {
         this.startsPrice = startsPrice;
         this.endsPrice = endsPrice;
     }
 
-    public Integer getStartsPrice() {
+    public int getStartsPrice() {
         return startsPrice;
     }
 
-    public void setStartsPrice(Integer startsPrice) {
+    public void setStartsPrice(int startsPrice) {
         this.startsPrice = startsPrice;
     }
 
-    public Integer getEndsPrice() {
+    public int getEndsPrice() {
         return endsPrice;
     }
 
-    public void setEndsPrice(Integer endsPrice) {
+    public void setEndsPrice(int endsPrice) {
         this.endsPrice = endsPrice;
     }
 }
