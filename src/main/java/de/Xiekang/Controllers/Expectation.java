@@ -5,28 +5,32 @@ import java.util.Map;
 
 public abstract class Expectation {
 
-    protected Map<Integer, Double> expectationMap = new HashMap<Integer, Double>();
+    protected Map<Integer, Map<Integer, Double>> expectationMap = new HashMap<>();
+    protected Map<Integer, Double> expectationContents = new HashMap<>();
     protected Double expectation;
 
-    /**
-     * to create expectation of price or demand
-     * @param start start price or demand
-     * @param end end price or demand
-     * @return an expectation matrix
-     */
-    public Map<Integer, Double> createExpectation(Integer start, Integer end) {
-        expectation = 1.0 / (end - start + 1.0);
-        for (int i = start; i <= end; i++) {
-            expectationMap.put(i, expectation);
+    public Map<Integer, Map<Integer, Double>> createExpectation(Integer startPrice, Integer endPrice) {
+        expectation = 1 / Math.pow((endPrice - startPrice + 1), 2);
+        for (Integer i = 1; i <= endPrice - startPrice + 1; i++) {
+            expectationContents.put(i, expectation);
+            expectationMap.put(i, expectationContents);
         }
         this.toString();
         return expectationMap;
     }
 
+    public Map<Integer, Map<Integer, Double>> getExpectationMap() {
+        return expectationMap;
+    }
+
+    public void setExpectationMap(Map<Integer, Map<Integer, Double>> expectationMap) {
+        this.expectationMap = expectationMap;
+    }
+
     @Override
     public String toString() {
         for (Integer i : expectationMap.keySet())
-            System.out.println("The key is " + i + " and the expectation is " + expectationMap.get(i));
+            System.out.println(i + " " + expectationMap.get(i) + " ");
         return null;
     }
 }

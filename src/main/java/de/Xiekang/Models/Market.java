@@ -2,6 +2,10 @@ package main.java.de.Xiekang.Models;
 
 import main.java.de.Xiekang.Controllers.Expectation;
 
+/**
+ * Market's price at a time point is included in this class
+ * This class inherits the class of expectation to create expectation table
+ */
 public class Market extends Expectation {
 
     private Integer startsPrice;

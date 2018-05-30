@@ -7,6 +7,8 @@ public class Battery {
     private Integer outputLimitation;
     private Integer inputLimitation;
 
+    public Battery() {}
+
     /**
      * The constructor of class battery
      * @param capacity depicts the capacity of a battery
