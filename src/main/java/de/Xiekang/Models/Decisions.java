@@ -10,13 +10,9 @@ public class Decisions extends Battery {
         super(3, 2);
     }
 
-    public enum Calculation {
-        Buy, Sell, Stay
-    }
-
-    public double decide(Calculation calculation) {
+    public double decide(DecisionsOption option) {
         if (super.getActualNumber() > 0 && super.getActualNumber() < super.getCapacity()) {
-            switch (calculation) {
+            switch (option) {
                 case Buy: {
                     super.setActualNumber(super.getActualNumber() + super.getInputLimitation() * super.getEfficiency());
                     break;

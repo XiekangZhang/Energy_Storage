@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.java.de.Xiekang.Models.BatteryTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-30T12:24:05" hostname="WL-POOL4-PNT-03117.UNI-MUENSTER.DE" time="0.005">
+  <properties/>
+  <testcase name="buyEnergy" classname="test.java.de.Xiekang.Models.BatteryTest" time="0.003"/>
+  <testcase name="stayEnergy" classname="test.java.de.Xiekang.Models.BatteryTest" time="0.001"/>
+  <testcase name="sellEnergy" classname="test.java.de.Xiekang.Models.BatteryTest" time="0.0"/>
+  <system-out><![CDATA[The new number of energy is 3.0 .
+The new number of energy is 2.0 .
+The new number of energy is 1.0 .
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

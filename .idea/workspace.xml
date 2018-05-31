@@ -2,21 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e45109c-ef8b-4f4b-932d-0e15f8735974" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/annotation-processors.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/DecisionTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/DecisionTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/Expectation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/Expectation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/ValueIteration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/ValueIteration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Battery.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Battery.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/StorageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/StorageModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Controllers/Expectation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Controllers/Expectation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Controllers/ValueIteration.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Controllers/ValueIteration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Models/Battery.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Models/Battery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Models/Market.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Models/Market.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Models/StorageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/Models/StorageModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/main/java/de/Xiekang/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Energy_Storage.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Energy_Storage.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Decisions$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Decisions$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Decisions$Calculation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Decisions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Decisions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/test/java/de/Xiekang/Models/BatteryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/test/java/de/Xiekang/Models/BatteryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,13 +37,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DecisionTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#602#603#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Decisions.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarketTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -57,15 +113,16 @@
         <option value="$PROJECT_DIR$/src/test/java/MarketTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Decisions.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/DecisionsOption.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java" />
       </list>
     </option>
   </component>
@@ -86,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,7 +199,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -187,9 +244,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BatteryTest.stayEnergy">
+  <component name="RunManager" selected="JUnit.MarketTest.createExpectation">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.de.Xiekang.main" />
+      <module name="Energy_Storage" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.de.Xiekang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Gradle" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -292,29 +360,6 @@
       <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Models.BatteryTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BatteryTest.buyEnergy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Energy_Storage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.de.Xiekang.Models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Models" />
-      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Models.BatteryTest" />
-      <option name="METHOD_NAME" value="buyEnergy" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -436,17 +481,17 @@
       <item itemvalue="JBoss Server.JBoss " />
       <item itemvalue="JUnit.MarketTest.createExpectation" />
       <item itemvalue="JUnit.BatteryTest" />
-      <item itemvalue="JUnit.BatteryTest.buyEnergy" />
       <item itemvalue="JUnit.BatteryTest.sellEnergy" />
       <item itemvalue="JUnit.BatteryTest.stayEnergy" />
+      <item itemvalue="Application.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MarketTest.createExpectation" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.BatteryTest" />
         <item itemvalue="JUnit.BatteryTest.stayEnergy" />
         <item itemvalue="JUnit.BatteryTest.sellEnergy" />
-        <item itemvalue="JUnit.BatteryTest.buyEnergy" />
-        <item itemvalue="JUnit.BatteryTest" />
-        <item itemvalue="JUnit.MarketTest.createExpectation" />
       </list>
     </recent_temporary>
   </component>
@@ -464,19 +509,13 @@
       <workItem from="1526644708460" duration="6005000" />
       <workItem from="1527659561585" duration="6952000" />
       <workItem from="1527673713254" duration="3053000" />
+      <workItem from="1527682151391" duration="1649000" />
+      <workItem from="1527690932527" duration="111000" />
+      <workItem from="1527691505126" duration="3170000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MarketTest_createExpectation - 2018.05.30 at 12h 28m 15s.xml">
-      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BatteryTest - 2018.05.30 at 12h 31m 48s.xml">
-      <configuration name="BatteryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BatteryTest_buyEnergy - 2018.05.30 at 12h 32m 23s.xml">
-      <configuration name="BatteryTest.buyEnergy" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BatteryTest - 2018.05.30 at 12h 33m 28s.xml">
       <configuration name="BatteryTest" configurationId="JUnit" />
     </history-entry>
@@ -498,9 +537,18 @@
     <history-entry file="BatteryTest_stayEnergy - 2018.05.30 at 12h 37m 44s.xml">
       <configuration name="BatteryTest.stayEnergy" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BatteryTest - 2018.05.30 at 14h 12m 26s.xml">
+      <configuration name="BatteryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarketTest_createExpectation - 2018.05.30 at 17h 04m 57s.xml">
+      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MarketTest_createExpectation - 2018.05.30 at 17h 16m 07s.xml">
+      <configuration name="MarketTest.createExpectation" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16512000" />
+    <option name="totallyTimeSpent" value="21442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -513,6 +561,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1028" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
@@ -523,19 +572,19 @@
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32867885" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26800978" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="JSF" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -551,6 +600,59 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -711,50 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,33 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-425">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,6 +859,85 @@
             <element signature="e#1917#1918#0" expanded="true" />
             <element signature="e#1979#1980#0" expanded="true" />
             <element signature="e#2033#2034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/DecisionsOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#770#771#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
           </folding>
         </state>
       </provider>
