@@ -11,26 +11,27 @@ public class Decisions extends Battery {
     }
 
     public double decide(DecisionsOption option) {
-        if (super.getActualNumber() > 0 && super.getActualNumber() < super.getCapacity()) {
-            switch (option) {
-                case Buy: {
+        switch (option) {
+            case Buy: {
+                if (super.actualNumber < super.getCapacity())
                     super.setActualNumber(super.getActualNumber() + super.getInputLimitation() * super.getEfficiency());
-                    break;
-                }
-                case Sell: {
-                    super.setActualNumber(super.getActualNumber() - super.getOutputLimitation() * super.getEfficiency());
-                    break;
-                }
-                case Stay: {
-                    super.setActualNumber(super.getActualNumber() * super.getEfficiency());
-                    break;
-                }
-                default:
-                    System.out.println("Please choose either buy or sell or stay!");
+                System.out.println("The new number of energy after buying is " + super.getActualNumber() + " .");
+                break;
             }
-        } else
-            System.out.println("It is impossible to buy or sell energy!");
-        System.out.println("The new number of energy is " + super.getActualNumber() + " .");
+            case Sell: {
+                if (super.actualNumber > 0)
+                    super.setActualNumber(super.getActualNumber() - super.getOutputLimitation() * super.getEfficiency());
+                System.out.println("The new number of energy after selling is " + super.getActualNumber() + " .");
+                break;
+            }
+            case Stay: {
+                super.setActualNumber(super.getActualNumber() * super.getEfficiency());
+                System.out.println("The new number of energy after staying is " + super.getActualNumber() + " .");
+                break;
+            }
+            default:
+                System.out.println("Please choose either buy or sell or stay!");
+        }
         return super.getActualNumber();
     }
 }
