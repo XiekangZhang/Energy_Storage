@@ -17,7 +17,7 @@ public abstract class Expectation {
 
     public Map<Integer, Map<Integer, Double>> createExpectation(int startPrice, int endPrice) {
         expectation = 1 / Math.pow((endPrice - startPrice + 1), 2);
-        for (int i = 1; i <= endPrice - startPrice + 1; i++) {
+        for (int i = startPrice; i <= endPrice; i++) {
             expectationContents.put(i, expectation);
             expectationMap.put(i, expectationContents);
         }
