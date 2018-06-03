@@ -7,6 +7,7 @@ import main.java.de.Xiekang.Models.Market;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * TODO
@@ -14,9 +15,9 @@ import java.util.Iterator;
  * - Test what happens when the time increases
  */
 public class DecisionLists {
-    private HashMap<Integer, ArrayList<State<Double, State<Double, Integer>>>> allListsOfStates = new HashMap<>();
-    private ArrayList<State<Double, State<Double, Integer>>> statesList = new ArrayList<>();
-    private ArrayList<State<Double, State<Double, Integer>>> statesListTemp = new ArrayList<>();
+    private List<State<Double, State<Double, Integer>>>[] allListsOfStates;
+    private List<State<Double, State<Double, Integer>>> statesListTemp = new ArrayList<>();
+    private List<State<Double, State<Double, Integer>>> statesList = new ArrayList<>();
     private State<Double, State<Double, Integer>> state;
     private State<Double, State<Double, Integer>> startState;
     private boolean flag = true;
@@ -33,128 +34,57 @@ public class DecisionLists {
         return (int) Math.pow(market.expectationMap.keySet().size() * DecisionsOption.values().length, time) * DecisionsOption.values().length;
     }
 
-    public State createStateBeforeDecision(Market market, Decisions decisions, int time){
+    public void createStateBeforeDecision(Market market, Decisions decisions, int time){
         if (time == 0) {
             state = new State<>(decisions.getActualNumber(), new State<>(market.expectation, market.getStartsPrice()));
-            createStateAfterDecision();
             startState = state;
-            splitLists(time);
+            createStateAfterDecision(market, time);
         } else {
             for (int i : market.expectationContents.keySet()) {
                 state = new State<>(decisions.getActualNumber(), new State<>(market.expectation, i));
-                createStateAfterDecision();
                 startState = state;
-                splitLists(time);
+                createStateAfterDecision(market, time);
             }
         }
-        return state;
     }
 
-    public State createStateAfterDecision() {
+    public State<Double, State<Double,Integer>> createStateAfterDecision(Market market, int time) {
         if (state != null) {
             statesListTemp.add(state);
             for (DecisionsOption decisionsOption : DecisionsOption.values()) {
                 Decisions decisions = new Decisions();
                 decisions.decide(decisionsOption);
                 state.setV1(decisions.getActualNumber());
-                statesListTemp.add(state);
+                statesListTemp.add(new State<>(state.getV1(), state.getV2()));
+                statesListTemp.add(startState);
             }
         }
+        createStatesLists(market, statesListTemp, time);
+        //statesListTemp.forEach(state1 -> System.out.println(state1));
         return state;
     }
 
-    public ArrayList splitLists(int time) {
+    public List[] createStatesLists(Market market, List<State<Double, State<Double, Integer>>> list, int time) {
+        allListsOfStates = new List[createLists(market, time)];
+        for (int i = 0; i < allListsOfStates.length; i++) {
+            allListsOfStates[i] = new ArrayList<>();
+            allListsOfStates[i].add(list.get(key));
+            allListsOfStates[i].add(list.get(key + 1));
+            key += 2;
+        }
 
-            Iterator<State<Double, State<Double, Integer>>> iterator = statesListTemp.iterator();
-            while (iterator.hasNext()) {
-                if (flag) {
-                    statesList.add(iterator.next());
-                    if (validateOfList(time)) {
-                        //System.out.println(statesList.get(0) + " " + statesList.get(1));
-                        createStatesLists();
-                        //System.out.println(statesList.get(0) + " " + statesList.get(1));
-                        statesList.clear();
-                        statesList.add(startState);
-                        //System.out.println(statesList.get(0));
-                    }
-                    flag = false;
-                } else if (startState.equals(iterator.next())) {
-                    flag = true;
-                    iterator.remove();
-                    splitLists(time);
-                }
-            }
-        return statesList;
-    }
-
-    public HashMap createStatesLists() {
-        System.out.println(statesList.get(0) + " " + statesList.get(1));
-        allListsOfStates.put(key, statesList);
-        //System.out.println(allListsOfStates.get(key) + " " + allListsOfStates.get(key).size());
-        key ++;
         return allListsOfStates;
     }
 
-    public boolean validateOfList(int time) {
-        if (statesList.size() == 2 * (time + 1))
-            return true;
-        else return false;
+
+    @Override
+    public String toString() {
+        //statesListTemp.forEach(state1 -> System.out.println(state1));
+        //statesList.forEach(state1 -> System.out.println(state1));
+        for (int i = 0; i < allListsOfStates.length; i++) {
+            System.out.println(allListsOfStates[i]);
+        }
+        return null;
     }
 
-
-    public HashMap<Integer, ArrayList<State<Double, State<Double, Integer>>>> getAllListsOfStates() {
-        return allListsOfStates;
-    }
-
-    public void setAllListsOfStates(HashMap<Integer, ArrayList<State<Double, State<Double, Integer>>>> allListsOfStates) {
-        this.allListsOfStates = allListsOfStates;
-    }
-
-    public ArrayList<State<Double, State<Double, Integer>>> getStatesList() {
-        return statesList;
-    }
-
-    public void setStatesList(ArrayList<State<Double, State<Double, Integer>>> statesList) {
-        this.statesList = statesList;
-    }
-
-    public ArrayList<State<Double, State<Double, Integer>>> getStatesListTemp() {
-        return statesListTemp;
-    }
-
-    public void setStatesListTemp(ArrayList<State<Double, State<Double, Integer>>> statesListTemp) {
-        this.statesListTemp = statesListTemp;
-    }
-
-    public State<Double, State<Double, Integer>> getState() {
-        return state;
-    }
-
-    public void setState(State<Double, State<Double, Integer>> state) {
-        this.state = state;
-    }
-
-    public State<Double, State<Double, Integer>> getStartState() {
-        return startState;
-    }
-
-    public void setStartState(State<Double, State<Double, Integer>> startState) {
-        this.startState = startState;
-    }
-
-    public boolean isFlag() {
-        return flag;
-    }
-
-    public void setFlag(boolean flag) {
-        this.flag = flag;
-    }
-
-    public int getKey() {
-        return key;
-    }
-
-    public void setKey(int key) {
-        this.key = key;
-    }
 }
