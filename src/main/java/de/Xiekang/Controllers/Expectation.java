@@ -25,6 +25,11 @@ public abstract class Expectation {
         return expectationMap;
     }
 
+    public double findExpectation(int fromPrice, int toPrice, Map<Integer, Map<Integer, Double>> expectationMap) {
+        return expectationMap.get(fromPrice).get(toPrice);
+    }
+
+
     public Map<Integer, Map<Integer, Double>> getExpectationMap() {
         return expectationMap;
     }
