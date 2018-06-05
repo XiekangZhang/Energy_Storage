@@ -1,7 +1,6 @@
 package main.java.de.Xiekang;
 
 import main.java.de.Xiekang.Controllers.TreeStructure;
-import main.java.de.Xiekang.Models.Market;
 
 import javax.swing.*;
 import javax.swing.tree.TreeNode;
@@ -26,5 +25,18 @@ public class main {
         frame.setLocationRelativeTo( null );
         frame.setVisible( true );
     }
+
+//    public static TreeNode treeTest() {
+//        DefaultMutableTreeNode root = new DefaultMutableTreeNode("Layer 1");
+//        DefaultMutableTreeNode leaves = new DefaultMutableTreeNode("Layer 2");
+//        DefaultMutableTreeNode leaves1 = new DefaultMutableTreeNode("Layer 3");
+//        DefaultMutableTreeNode leaves2 = new DefaultMutableTreeNode("Layer 4");
+//
+//        root.add(leaves);
+//        leaves.add(leaves1);
+//        leaves1.add(leaves2);
+//
+//        return root;
+//    }
 }
 

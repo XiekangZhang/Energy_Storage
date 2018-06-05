@@ -6,6 +6,10 @@ import main.java.de.Xiekang.Models.Market;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * TODO
+ * - States zusammenführen
+ */
 public class StateGenerator {
     private List<State<Double, State<Double, Integer>>> stateList = new ArrayList<>();
     private State<Double, State<Double, Integer>>[] state;
@@ -40,7 +44,7 @@ public class StateGenerator {
                                 state[specialIndex].getV2());
                         index++;
                     } else {
-                        state[index] = new State<>(0.0, null);
+                        state[index] = new State<>(state[specialIndex].getV1(), state[specialIndex].getV2());
                         index++;
                     }
                     break;
@@ -52,7 +56,7 @@ public class StateGenerator {
                                 state[specialIndex].getV2());
                         index++;
                     } else {
-                        state[index] = new State<>(0.0, null);;
+                        state[index] = new State<>(state[specialIndex].getV1(), state[specialIndex].getV2());
                         index++;
                     }
                     break;
