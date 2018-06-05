@@ -9,19 +9,17 @@ import javax.swing.tree.TreeNode;
 public class main {
 
     public static void main(String[] args) {
-        Market market = new Market(1, 2);
-        market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
+        TreeStructure treeStructure = new TreeStructure();
 
         // Der Wurzelknoten wird hergestellt
-        TreeStructure treeStructure = new TreeStructure();
-        //TreeNode root = (treeStructure.createTree(market, decisions, 1));
+        TreeNode root = (treeStructure.createTree());
 
         // Der Wurzelknoten wird dem neuen JTree im Konstruktor übergeben
-        //JTree tree = new JTree( root );
+        JTree tree = new JTree( root );
 
         // Ein Frame herstellen, um den Tree auch anzuzeigen
         JFrame frame = new JFrame( "Energy-Storage" );
-        //frame.add( new JScrollPane( tree ));
+        frame.add( new JScrollPane( tree ));
 
         frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
         frame.pack();
