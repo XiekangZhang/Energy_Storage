@@ -23,7 +23,7 @@ public class TreeStructure {
     private int time;
 
     public TreeStructure() {
-        time = 1;
+        time = 2;
         market = new Market(1, 2);
         market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
         battery = new Battery(3, 2);
@@ -33,52 +33,40 @@ public class TreeStructure {
     }
 
     public TreeNode createTree() {
-        for (int i = 0; i < leaves.length; i++) {
-            for (int j = 0; j < leaves[i].size(); j++) {
-
-                if (i % 2 != 0 && i < leaves.length - 1) {
+        for (int i = 0; i < leaves.length - 1; i++) {
+            if (i % 2 == 0) {
+                int d1 = 0;
+                for (int j = 0; j < leaves[i].size(); j++) {
+                    if (d1 < leaves[i + 1].size()) {
+                        for (int d = 0; d < DecisionsOption.values().length; d++) {
+                            leaves[i].get(j).add(leaves[i + 1].get(d + d1));
+                        }
+                        d1 += DecisionsOption.values().length;
+                    }
 
                 }
-                else if (i % 2 == 0 && i < leaves.length - 1){
-                    for (int d = 0; d < leaves[i + 1].size(); d += DecisionsOption.values().length) {
-                        leaves[i].get(j).add(new DefaultMutableTreeNode(leaves[i + 1].get(d)));
-                        leaves[i].get(j).add(new DefaultMutableTreeNode(leaves[i + 1].get(d + 1)));
-                        leaves[i].get(j).add(new DefaultMutableTreeNode(leaves[i + 1].get(d + 2)));
+            } else {
+                int p1 = 0;
+                for (int j = 0; j < leaves[i].size(); j++) {
+                    if (p1 < leaves[i + 1].size()) {
+                        for (int p = 0; p < market.expectationMap.size(); p++) {
+                            leaves[i].get(j).add(leaves[i + 1].get(p + p1));
+                        }
+                        p1 += market.expectationMap.size();
                     }
                 }
-
             }
         }
         root = leaves[0].get(0);
+        return root;
+    }
 
-//        root = new DefaultMutableTreeNode(leaves[0].get(0));
-//
-//        for (int i = 0; i < 3; i++) {
-//            root.add(leaves[1].get(i));
-//        }
-//
-//        for (int i = 1; i < leaves.length; i++) {
-//            int k = 0;
-//            int p = 0;
-//            int z = i + 1;
-//
-//            for (int j = 0; j < leaves[i].size(); j++) {
-//
-//                if (i % 2 != 0 && i < leaves.length - 1) {
-//                    leaves[i].get(j).add(new DefaultMutableTreeNode(leaves[z].get(k)));
-//                    leaves[i].get(j).add(new DefaultMutableTreeNode(leaves[z].get(k + 1)));
-//                    k += 2;
-//                }
-//
-//                if (i % 2 == 0 && i < leaves.length) {
-//                    leaves[i].get(j).add(new DefaultMutableTreeNode(leaves[z].get(p)));
-//                    leaves[i].get(j).add(new DefaultMutableTreeNode(leaves[z].get(p + 1)));
-//                    leaves[i].get(j).add(new DefaultMutableTreeNode(leaves[z].get(p + 2)));
-//                    p += 3;
-//                }
-//
-//            }
-//        }
+    public TreeNode deleteDuplicateChildren() {
+        /**
+         * TODO
+         * - find how iterator a jtree
+         * - merge the same children
+         */
         return root;
     }
 

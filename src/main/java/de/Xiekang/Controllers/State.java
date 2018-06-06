@@ -1,5 +1,11 @@
 package main.java.de.Xiekang.Controllers;
 
+/**
+ * TODO
+ * - change 2 tuple state to 3 tuple because of demand
+ * @param <V1>
+ * @param <V2>
+ */
 public class State<V1, V2> {
     private V1 v1;
     private V2 v2;
