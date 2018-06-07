@@ -1,5 +1,11 @@
 package main.java.de.Xiekang.Models;
 
+/**
+ * TODO
+ * - How a real battery looks
+ * - optional: consider the efficiency after a certain time
+ * - Change battery to generic class. Contains five elements
+ */
 public class Battery {
 
     protected double capacity;
@@ -14,14 +20,6 @@ public class Battery {
         this(capacity, 1, 1, 1, actualNumber);
     }
 
-    /**
-     * The constructor of class battery
-     * @param capacity depicts the capacity of a battery
-     * @param efficiency shows the efficiency of a battery
-     * @param outputLimitation constraints the available sellable amount to the market
-     * @param inputLimitation constraints the buyable amount from the market
-     * @param actualNumber depicts the actual number of energy at a time point
-     */
     public Battery(double capacity, double efficiency, double outputLimitation, double inputLimitation, double actualNumber) {
         this.capacity = capacity;
         this.efficiency = efficiency;

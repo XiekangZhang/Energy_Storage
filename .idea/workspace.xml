@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3e45109c-ef8b-4f4b-932d-0e15f8735974" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/DecisionLists.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/DecisionLists.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/test/java/de/Xiekang/Controllers/DecisionListsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/test/java/de/Xiekang/Controllers/DecisionListsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionListsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/TreeStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/TreeStructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Battery.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Battery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Market.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Market.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/TreeStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/TreeStructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/StateGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/StateGeneratorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DecisionLists.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java">
+      <file leaf-file-name="TreeStructure.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/TreeStructure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="69" column="51" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
+            <state relative-caret-position="443">
+              <caret line="130" column="8" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,34 +45,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DecisionListsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionListsTest.java">
+      <file leaf-file-name="StateGeneratorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/StateGeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="285">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="State.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/State.java">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding>
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#225#226#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
                 <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#252#253#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
+                <element signature="e#306#307#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#537#538#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StateOfMarket.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateOfMarket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Battery.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -78,8 +114,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -101,22 +137,28 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/MarketTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/MarketTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Decisions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/DecisionsOption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionTreeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/State.java" />
-        <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionListsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionListsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/TreeStructureTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateOfMarket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/State.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Node.java" />
+        <option value="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/StateGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/TreeStructure.java" />
       </list>
     </option>
   </component>
@@ -126,9 +168,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="525" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="525" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -136,7 +179,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,7 +249,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +264,7 @@
     <property name="create.test.in.the.same.root" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
@@ -252,9 +295,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DecisionListsTest.createStateBeforeDecision">
+  <component name="RunManager" selected="Application.main">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.de.Xiekang.main" />
+      <module name="Energy_Storage" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.de.Xiekang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="Gradle" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -343,30 +397,7 @@
         </option>
       </method>
     </configuration>
-    <configuration name="BatteryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Energy_Storage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.de.Xiekang.Models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Models" />
-      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Models.BatteryTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DecisionListsTest.createLists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StateGeneratorTest.createTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Energy_Storage" />
       <extension name="coverage">
         <pattern>
@@ -377,77 +408,31 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Controllers.DecisionListsTest" />
-      <option name="METHOD_NAME" value="createLists" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DecisionListsTest.createStateAfterDecision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Energy_Storage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.de.Xiekang.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Controllers.DecisionListsTest" />
-      <option name="METHOD_NAME" value="createStateAfterDecision" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DecisionListsTest.createStateBeforeDecision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Energy_Storage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.de.Xiekang.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Controllers.DecisionListsTest" />
-      <option name="METHOD_NAME" value="createStateBeforeDecision" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="DecisionTreeTest.createTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Energy_Storage" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.de.Xiekang.Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Controllers" />
-      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Controllers.DecisionTreeTest" />
+      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Controllers.StateGeneratorTest" />
       <option name="METHOD_NAME" value="createTreeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="StateGeneratorTest.generateInitialState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Energy_Storage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.de.Xiekang.Controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.java.de.Xiekang.Controllers" />
+      <option name="MAIN_CLASS_NAME" value="test.java.de.Xiekang.Controllers.StateGeneratorTest" />
+      <option name="METHOD_NAME" value="generateInitialState" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -499,19 +484,15 @@
     <list>
       <item itemvalue="Gradle.Gradle" />
       <item itemvalue="JBoss Server.JBoss " />
-      <item itemvalue="JUnit.BatteryTest" />
-      <item itemvalue="JUnit.DecisionTreeTest.createTreeTest" />
-      <item itemvalue="JUnit.DecisionListsTest.createLists" />
-      <item itemvalue="JUnit.DecisionListsTest.createStateBeforeDecision" />
-      <item itemvalue="JUnit.DecisionListsTest.createStateAfterDecision" />
+      <item itemvalue="Application.main" />
+      <item itemvalue="JUnit.StateGeneratorTest.generateInitialState" />
+      <item itemvalue="JUnit.StateGeneratorTest.createTreeTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DecisionListsTest.createStateBeforeDecision" />
-        <item itemvalue="JUnit.DecisionListsTest.createLists" />
-        <item itemvalue="JUnit.DecisionListsTest.createStateAfterDecision" />
-        <item itemvalue="JUnit.BatteryTest" />
-        <item itemvalue="JUnit.DecisionTreeTest.createTreeTest" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.StateGeneratorTest.createTreeTest" />
+        <item itemvalue="JUnit.StateGeneratorTest.generateInitialState" />
       </list>
     </recent_temporary>
   </component>
@@ -534,43 +515,53 @@
       <workItem from="1527691505126" duration="3170000" />
       <workItem from="1527750477400" duration="21294000" />
       <workItem from="1527963513604" duration="10236000" />
+      <workItem from="1528097125270" duration="30934000" />
+      <workItem from="1528180841218" duration="10324000" />
+      <workItem from="1528194047526" duration="3548000" />
+      <workItem from="1528200751081" duration="5640000" />
+      <workItem from="1528212057082" duration="3244000" />
+      <workItem from="1528267450214" duration="2260000" />
+      <workItem from="1528287335060" duration="2482000" />
+      <workItem from="1528356283670" duration="88000" />
+      <workItem from="1528358358899" duration="3312000" />
+      <workItem from="1528362988586" duration="10225000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 13m 22s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 13m 13s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 14m 24s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 13m 19s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 15m 26s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 13m 24s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 16m 11s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 13m 29s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 16m 29s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 46m 19s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 16m 44s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 47m 04s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 17m 13s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 48m 05s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 17m 38s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 48m 28s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 18m 58s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 50m 37s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DecisionListsTest_createStateBeforeDecision - 2018.06.03 at 02h 19m 14s.xml">
-      <configuration name="DecisionListsTest.createStateBeforeDecision" configurationId="JUnit" />
+    <history-entry file="StateGeneratorTest_createTreeTest - 2018.06.07 at 15h 52m 00s.xml">
+      <configuration name="StateGeneratorTest.createTreeTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68532000" />
+    <option name="totallyTimeSpent" value="144215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,9 +574,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32948583" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
@@ -593,19 +585,19 @@
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843652" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32843652" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6390346" visible="true" weight="0.2741148" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.628125" visible="true" weight="0.24908425" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.36096537" side_tool="true" visible="true" weight="0.2741148" />
+      <window_info id="Structure" order="1" sideWeight="0.371875" side_tool="true" visible="true" weight="0.24908425" />
       <window_info anchor="right" id="JSF" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39979014" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -613,6 +605,36 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843652" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6306401" visible="true" weight="0.2771673" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.3693599" side_tool="true" visible="true" weight="0.2771673" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32948583" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="right" id="JSF" order="4" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32975295" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -622,179 +644,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Info2Java/info2/binaryTree/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/DecisionsOption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Pair.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/BeforeDecision.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="50" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="28" column="29" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="29" />
-          <folding>
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1203#1204#0" expanded="true" />
-            <element signature="e#1251#1252#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1365#1366#0" expanded="true" />
-            <element signature="e#1421#1422#0" expanded="true" />
-            <element signature="e#1469#1470#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1678#1679#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-            <element signature="e#1781#1782#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1879#1880#0" expanded="true" />
-            <element signature="e#1917#1918#0" expanded="true" />
-            <element signature="e#1979#1980#0" expanded="true" />
-            <element signature="e#2033#2034#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -805,16 +668,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -826,9 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../Libraries/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -924,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/MarketTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -938,79 +775,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionTreeTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="113" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="113" />
-          <folding>
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-          <folding>
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionListsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Models/BatteryTest.java" />
     <entry file="file://$USER_HOME$/Downloads/Info2Java/info2/binaryTree/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/DecisionListsTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Decisions.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/TreeStructureTest.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="497" selection-start-line="497" selection-end-line="497" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1021,31 +837,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/StorageModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/ValueIteration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Expectation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="27" column="86" selection-start-line="27" selection-start-column="86" selection-end-line="27" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Market.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Battery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateOfMarket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="46" column="108" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
           <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
             <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#306#307#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/DecisionLists.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="69" column="51" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
+        <state relative-caret-position="150">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/StateGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/TreeStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="130" column="8" selection-start-line="130" selection-start-column="8" selection-end-line="130" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
