@@ -58,15 +58,29 @@ public class TreeStructure {
             }
         }
         root = leaves[0].get(0);
+        deleteDuplicateChildren();
         return root;
     }
 
     public TreeNode deleteDuplicateChildren() {
-        /**
-         * TODO
-         * - find how iterator a jtree
-         * - merge the same children
-         */
+
+        for (int i = 0; i < leaves.length; i++) {
+            for (int j = 0; j < leaves[i].size(); j++) {
+                for (int k = leaves[i].size() - 1; k > j; k--) {
+                    if (leaves[i].get(j).toString().compareTo(leaves[i].get(k).toString()) == 0) {
+                        if (i % 2 == 0) {
+                            if (leaves[i-1].get(Math.floorDiv(k, market.expectationMap.size())).isNodeChild(leaves[i].get(k)))
+                                leaves[i-1].get(Math.floorDiv(k, market.expectationMap.size())).remove(leaves[i].get(k));
+                        } else {
+                            if (leaves[i-1].get(Math.floorDiv(k, DecisionsOption.values().length)).isNodeChild(leaves[i].get(k)))
+                                leaves[i-1].get(Math.floorDiv(k, DecisionsOption.values().length)).remove(leaves[i].get(k));
+                        }
+
+                    }
+                }
+            }
+        }
+        root = leaves[0].get(0);
         return root;
     }
 
@@ -112,17 +126,6 @@ public class TreeStructure {
 
     @Override
     public String toString() {
-
-        for (int i = 0; i < leaves.length; i++) {
-            leaves[i].forEach(node -> System.out.print(node));
-            System.out.println();
-        }
-
-        /**
-         * for (int i = 0; i < leaves.length; i++) {
-         *             System.out.println(leaves[i].size());
-         *         }
-         */
 
         return super.toString();
     }

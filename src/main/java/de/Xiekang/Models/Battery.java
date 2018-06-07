@@ -4,6 +4,7 @@ package main.java.de.Xiekang.Models;
  * TODO
  * - How a real battery looks
  * - optional: consider the efficiency after a certain time
+ * - Change battery to generic class. Contains five elements
  */
 public class Battery {
 

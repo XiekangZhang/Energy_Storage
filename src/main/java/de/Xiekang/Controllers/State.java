@@ -1,8 +1,6 @@
 package main.java.de.Xiekang.Controllers;
 
 /**
- * TODO
- * - change 2 tuple state to 3 tuple because of demand
  * @param <V1>
  * @param <V2>
  */

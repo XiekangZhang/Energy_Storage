@@ -21,7 +21,7 @@ public class StateGeneratorTest {
   @Test
     public void createTreeTest() {
       TreeStructure treeStructure = new TreeStructure();
-      treeStructure.toString();
+      treeStructure.createTree();
   }
 
 }

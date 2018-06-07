@@ -9,6 +9,7 @@ import main.java.de.Xiekang.Controllers.Expectation;
  * - Consider the demand
  * - use price database
  * - Time based on real time (Hour)
+ * - Change market to generic class contains three tuples
  */
 public class Market extends Expectation {
 
