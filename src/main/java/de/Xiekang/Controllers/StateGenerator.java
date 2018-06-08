@@ -6,13 +6,9 @@ import main.java.de.Xiekang.Models.Market;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * TODO
- * - States zusammenführen
- */
 public class StateGenerator {
-    private List<State<Double, State<Double, Integer>>> stateList = new ArrayList<>();
-    private State<Double, State<Double, Integer>>[] state;
+    private List<State<Double, StateOfMarket<Integer, Integer, Double>>> stateList = new ArrayList<>();
+    private State<Double, StateOfMarket<Integer, Integer, Double>>[] state;
     private int index = 0;
     private int specialIndex = 0;
     private boolean decisionFlag = true;
@@ -30,7 +26,7 @@ public class StateGenerator {
 
     public State[] createInitialState(Market market, Battery battery, int time) {
         state = new State[createNumberOfStates(market, time)];
-        state[index] = new State(battery.getActualNumber(), new State(market.findExpectation(market.expectationMap), 1));
+        state[index] = new State(battery.getActualNumber(), new StateOfMarket<>(market.getDemand(), market.getStartsPrice(), 1));
         index++;
         return state;
     }
@@ -82,7 +78,7 @@ public class StateGenerator {
                 for (int i : market.expectationMap.keySet()) {
                     state[index] = (state[specialIndex + 1] == null) ?
                             null :
-                            new State(state[specialIndex + 1].getV1(), new State<>(market.findExpectation(1, i, market.expectationMap), i));
+                            new State(state[specialIndex + 1].getV1(), new StateOfMarket<>(market.getDemand(), i, market.findExpectation(1, i, market.expectationMap)));
                     index++;
                 }
                 specialIndex++;

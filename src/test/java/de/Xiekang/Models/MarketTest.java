@@ -15,7 +15,7 @@ public class MarketTest {
         Map<Integer, Map<Integer, Double>> map = new HashMap<>();
         Map<Integer, Map<Integer, Double>> actual = new HashMap<>();
         Map<Integer, Double> mapContents = new HashMap<>();
-        Market market = new Market(1, 2);
+        Market market = new Market(1, 2, 1);
         mapContents.put(1, 0.25);
         mapContents.put(2, 0.25);
         map.put(1, mapContents);

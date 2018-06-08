@@ -6,7 +6,7 @@ import main.java.de.Xiekang.Controllers.Expectation;
  * Market's price at a time point is included in this class
  * This class inherits the class of expectation to create expectation table
  * TODO
- * - Consider the demand
+ * + Consider the demand
  * - use price database
  * - Time based on real time (Hour)
  * - Change market to generic class contains three tuples
@@ -19,9 +19,10 @@ public class Market extends Expectation {
 
     public Market() {}
 
-    public Market(int startsPrice, int endsPrice) {
+    public Market(int startsPrice, int endsPrice, int demand) {
         this.startsPrice = startsPrice;
         this.endsPrice = endsPrice;
+        this.demand = demand;
     }
 
     public int getStartsPrice() {

@@ -10,7 +10,7 @@ public class StateGeneratorTest {
   @Test
   public void generateInitialState() {
       StateGenerator stateGenerator = new StateGenerator();
-      Market market = new Market(1, 2);
+      Market market = new Market(1, 2, 1);
       market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
       Battery battery = new Battery(3, 2);
       stateGenerator.createState(market, battery, 2);
@@ -22,6 +22,7 @@ public class StateGeneratorTest {
     public void createTreeTest() {
       TreeStructure treeStructure = new TreeStructure();
       treeStructure.createTree();
+      treeStructure.toString();
   }
 
 }

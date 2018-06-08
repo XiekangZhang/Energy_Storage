@@ -7,6 +7,7 @@ import main.java.de.Xiekang.Models.Market;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
 
 public class TreeStructure {
@@ -24,7 +25,7 @@ public class TreeStructure {
 
     public TreeStructure() {
         time = 2;
-        market = new Market(1, 2);
+        market = new Market(1, 2, 1);
         market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
         battery = new Battery(3, 2);
         StateGenerator stateGenerator = new StateGenerator();
@@ -62,20 +63,48 @@ public class TreeStructure {
         return root;
     }
 
+    /**
+     * Todo
+     * - Frage wie kann ich den Track suchen nach des Merges?
+     *
+     * @return
+     */
+
     public TreeNode deleteDuplicateChildren() {
 
-        for (int i = 0; i < leaves.length; i++) {
+        /*for (int i = 0; i < leaves.length; i++) {
             for (int j = 0; j < leaves[i].size(); j++) {
                 for (int k = leaves[i].size() - 1; k > j; k--) {
                     if (leaves[i].get(j).toString().compareTo(leaves[i].get(k).toString()) == 0) {
                         if (i % 2 == 0) {
-                            if (leaves[i-1].get(Math.floorDiv(k, market.expectationMap.size())).isNodeChild(leaves[i].get(k)))
-                                leaves[i-1].get(Math.floorDiv(k, market.expectationMap.size())).remove(leaves[i].get(k));
+                            if (leaves[i - 1].get(Math.floorDiv(k, market.expectationMap.size())).isNodeChild(leaves[i].get(k))) {
+                                leaves[i - 1].get(Math.floorDiv(k, market.expectationMap.size())).remove(leaves[i].get(k));
+                            }
                         } else {
-                            if (leaves[i-1].get(Math.floorDiv(k, DecisionsOption.values().length)).isNodeChild(leaves[i].get(k)))
-                                leaves[i-1].get(Math.floorDiv(k, DecisionsOption.values().length)).remove(leaves[i].get(k));
+                            if (leaves[i - 1].get(Math.floorDiv(k, DecisionsOption.values().length)).isNodeChild(leaves[i].get(k)))
+                                leaves[i - 1].get(Math.floorDiv(k, DecisionsOption.values().length)).remove(leaves[i].get(k));
                         }
 
+                    }
+                }
+            }
+        }*/
+
+        for (int i = 1; i < leaves.length; i++) {
+            if (i % 2 == 0) {
+                for (int j = 0; j < leaves[i].size(); j += market.expectationMap.size()) {
+                    for (int k = j + market.expectationMap.size() - 1; k > j; k--) {
+                        if (leaves[i].get(j).toString().compareTo(leaves[i].get(k).toString()) == 0) {
+                            leaves[i - 1].get(Math.floorDiv(j, market.expectationMap.size())).remove(leaves[i].get(j));
+                        }
+                    }
+                }
+            } else {
+                for (int j = 0; j < leaves[i].size(); j += DecisionsOption.values().length) {
+                    for (int k = j + DecisionsOption.values().length - 1; k > j; k--) {
+                        if (leaves[i].get(j).toString().compareTo(leaves[i].get(k).toString()) == 0) {
+                            leaves[i - 1].get(Math.floorDiv(j, DecisionsOption.values().length)).remove(leaves[i].get(j));
+                        }
                     }
                 }
             }
@@ -126,7 +155,6 @@ public class TreeStructure {
 
     @Override
     public String toString() {
-
         return super.toString();
     }
 }
