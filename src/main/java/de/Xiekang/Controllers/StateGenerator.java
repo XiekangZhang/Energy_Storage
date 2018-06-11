@@ -61,8 +61,9 @@ public class StateGenerator {
 
     public State[] createInitialStates(Market market, Battery battery, int time) {
         state = new State[createNumberOfStates(market, time)];
-        state[index] = new State<>(stateOld[4].getV1(), stateOld[4].getV2());
-        Battery batteryUpdate = new Battery(battery.getCapacity(), stateOld[4].getV1());
+        int helpIndex = (int)Math.random() * 10 + 10;
+        state[index] = new State<>(stateOld[helpIndex].getV1(), stateOld[helpIndex].getV2());
+        Battery batteryUpdate = new Battery(battery.getCapacity(), stateOld[helpIndex].getV1());
         index++;
         createInitialStateAfterDecision(batteryUpdate, specialIndex);
         createStateAfterTime(market, batteryUpdate, time);

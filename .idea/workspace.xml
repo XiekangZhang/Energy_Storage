@@ -5,13 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/StateGenerator$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/StateGenerator$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/StateGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/StateGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/TreeStructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Controllers/TreeStructure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Time.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/main/java/de/Xiekang/Models/Time.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Energy_Storage/test/java/de/Xiekang/Controllers/StateGeneratorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Energy_Storage/test/java/de/Xiekang/Controllers/StateGeneratorTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/TreeStructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/TreeStructure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/Xiekang/Models/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/StateGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/de/Xiekang/Controllers/StateGeneratorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,8 +30,8 @@
       <file leaf-file-name="StateGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+            <state relative-caret-position="975">
+              <caret line="65" column="85" selection-start-line="65" selection-start-column="85" selection-end-line="65" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -262,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StateGeneratorTest.generateInitialState">
+  <component name="RunManager" selected="Application.main">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -481,8 +475,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StateGeneratorTest.generateInitialState" />
         <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.StateGeneratorTest.generateInitialState" />
         <item itemvalue="JUnit.TimeTest.timeCalulation" />
         <item itemvalue="JUnit.StateGeneratorTest.createTreeTest" />
       </list>
@@ -520,14 +514,11 @@
       <workItem from="1528380812141" duration="128000" />
       <workItem from="1528447745520" duration="4502000" />
       <workItem from="1528703356767" duration="14387000" />
-      <workItem from="1528719720471" duration="7852000" />
+      <workItem from="1528719720471" duration="7982000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StateGeneratorTest_generateInitialState - 2018.06.11 at 16h 20m 05s.xml">
-      <configuration name="StateGeneratorTest.generateInitialState" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StateGeneratorTest_generateInitialState - 2018.06.11 at 16h 22m 34s.xml">
       <configuration name="StateGeneratorTest.generateInitialState" configurationId="JUnit" />
     </history-entry>
@@ -555,9 +546,12 @@
     <history-entry file="StateGeneratorTest_generateInitialState - 2018.06.11 at 16h 56m 15s.xml">
       <configuration name="StateGeneratorTest.generateInitialState" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StateGeneratorTest_generateInitialState - 2018.06.11 at 17h 03m 38s.xml">
+      <configuration name="StateGeneratorTest.generateInitialState" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171084000" />
+    <option name="totallyTimeSpent" value="171214000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,14 +575,14 @@
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32843652" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843652" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.621875" visible="true" weight="0.17338218" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.62224555" visible="true" weight="0.17338218" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.378125" side_tool="true" visible="true" weight="0.17338218" />
+      <window_info id="Structure" order="1" sideWeight="0.37775445" side_tool="true" visible="true" weight="0.17338218" />
       <window_info anchor="right" id="JSF" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -927,8 +921,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/Xiekang/Controllers/StateGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+        <state relative-caret-position="975">
+          <caret line="65" column="85" selection-start-line="65" selection-start-column="85" selection-end-line="65" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
