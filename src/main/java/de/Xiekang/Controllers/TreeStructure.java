@@ -32,7 +32,7 @@ public class TreeStructure {
 
         battery = new Battery(3, 2);
         StateGenerator stateGenerator = new StateGenerator();
-        stateList = stateGenerator.createState(market, battery, time);
+        stateList = stateGenerator.createStates(market, battery, time);
 
         createLeaves(time);
     }

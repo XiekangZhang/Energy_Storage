@@ -48,6 +48,7 @@ public class Time {
                 time += 8;
                 break;
             }
+            default: System.out.println("No one is working at the moment.");
         }
 
         return time;

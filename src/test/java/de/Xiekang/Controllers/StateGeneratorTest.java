@@ -14,8 +14,8 @@ public class StateGeneratorTest {
       Market market = new Market(1, 2, 1);
       market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
       Battery battery = new Battery(3, 2);
-      Time newTime = new Time(1, "11:00");
-      stateGenerator.createState(market, battery, newTime.TimeCalculation());
+      Time newTime = new Time(1, "12:00");
+      stateGenerator.createStates(market, battery, newTime.TimeCalculation());
       stateGenerator.toString();
   }
 
