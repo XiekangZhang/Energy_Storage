@@ -4,6 +4,7 @@ import main.java.de.Xiekang.Controllers.StateGenerator;
 import main.java.de.Xiekang.Controllers.TreeStructure;
 import main.java.de.Xiekang.Models.Battery;
 import main.java.de.Xiekang.Models.Market;
+import main.java.de.Xiekang.Models.Time;
 import org.junit.Test;
 
 public class StateGeneratorTest {
@@ -13,8 +14,8 @@ public class StateGeneratorTest {
       Market market = new Market(1, 2, 1);
       market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
       Battery battery = new Battery(3, 2);
-      stateGenerator.createState(market, battery, 2);
-      stateGenerator.transferArrayToList();
+      Time newTime = new Time(1, "11:00");
+      stateGenerator.createState(market, battery, newTime.TimeCalculation());
       stateGenerator.toString();
   }
 
