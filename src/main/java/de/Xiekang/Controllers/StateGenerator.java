@@ -77,9 +77,6 @@ public class StateGenerator {
     }
 
     public State[] createStateAfterTime(Market market, Battery battery, int time) {
-        //new demand and expectation are needed by increasing the time
-        //market.setDemand(2);
-        //updateMarket(market);
 
         while (time > 0) {
             updateMarket(market);
@@ -87,7 +84,7 @@ public class StateGenerator {
                 for (int i : market.expectationMap.keySet()) {
                     state[index] = (state[specialIndex + 1] == null) ?
                             null :
-                            new State(state[specialIndex + 1].getV1(), new StateOfMarket<>(market.getDemand(), i, market.findExpectation(1, i, market.expectationMap)));
+                            new State(state[specialIndex + 1].getV1(), new StateOfMarket<>(market.getDemand(), i, market.findExpectation(state[specialIndex + 1].getV2().getPrice(), i)));
                     index++;
                 }
                 specialIndex++;
@@ -142,6 +139,11 @@ public class StateGenerator {
 
     public Market updateMarket(Market market) {
         market.setDemand((int)(Math.random() * 10 + 1));
+
+        /*
+        TODO
+        - Wahrscheinlichkeit update
+         */
         return market;
     }
 

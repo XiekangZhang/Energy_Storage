@@ -16,23 +16,24 @@ public abstract class Expectation {
     protected double[][] expectation;
 
     public Map<Integer, Map<Integer, Double>> createExpectation(int startPrice, int endPrice) {
-        int j = 0;
-        int t = 0;
+        int r = 0;
+        int l = 0;
         int index = 0;
 
         createNumberOfExpectation(startPrice, endPrice);
 
-        expectationContents[0].put(startPrice, expectation[0][0]);
-        expectationContents[0].put(endPrice, expectation[0][1]);
-
-        expectationContents[1].put(startPrice, expectation[1][0]);
-        expectationContents[1].put(endPrice, expectation[1][1]);
+        for (int i = 0; i < expectationContents.length; i++) {
+            for (int j = startPrice; j <= endPrice; j++) {
+                expectationContents[i].put(j, expectation[r][l]);
+                l++;
+            }
+            r++;
+            l = 0;
+        }
 
         for (int k = startPrice; k <= endPrice; k++) {
             expectationMap.put(k, expectationContents[index++]);
         }
-
-        this.toString();
         return expectationMap;
     }
 
@@ -54,11 +55,11 @@ public abstract class Expectation {
     }
 
     public double findExpectation(Map<Integer, Map<Integer, Double>> expectationMap) {
-        return this.findExpectation(1, 1, expectationMap);
+        return this.findExpectation(1, 1);
     }
 
-    public double findExpectation(int fromPrice, int toPrice, Map<Integer, Map<Integer, Double>> expectationMap) {
-        return expectationMap.get(fromPrice).get(toPrice);
+    public double findExpectation(int fromPrice, int toPrice) {
+        return this.expectationMap.get(fromPrice).get(toPrice);
     }
 
 
@@ -70,10 +71,17 @@ public abstract class Expectation {
         this.expectationMap = expectationMap;
     }
 
+    public double[][] getExpectation() {
+        return expectation;
+    }
+
+    public void setExpectation(double[][] expectation) {
+        this.expectation = expectation;
+    }
+
     @Override
     public String toString() {
-        for (Integer i : expectationMap.keySet())
-            System.out.println(i + " " + expectationMap.get(i) + " ");
+
         return null;
     }
 }
