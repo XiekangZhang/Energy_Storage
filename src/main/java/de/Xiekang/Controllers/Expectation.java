@@ -12,17 +12,45 @@ import java.util.Map;
 public abstract class Expectation {
 
     protected Map<Integer, Map<Integer, Double>> expectationMap = new HashMap<>();
-    protected Map<Integer, Double> expectationContents = new HashMap<>();
-    protected double expectation;
+    protected Map<Integer, Double> expectationContents[];
+    protected double[][] expectation;
 
     public Map<Integer, Map<Integer, Double>> createExpectation(int startPrice, int endPrice) {
-        expectation = 1 / Math.pow((endPrice - startPrice + 1), 2);
-        for (int i = startPrice; i <= endPrice; i++) {
-            expectationContents.put(i, expectation);
-            expectationMap.put(i, expectationContents);
+        int j = 0;
+        int t = 0;
+        int index = 0;
+
+        createNumberOfExpectation(startPrice, endPrice);
+
+        expectationContents[0].put(startPrice, expectation[0][0]);
+        expectationContents[0].put(endPrice, expectation[0][1]);
+
+        expectationContents[1].put(startPrice, expectation[1][0]);
+        expectationContents[1].put(endPrice, expectation[1][1]);
+
+        for (int k = startPrice; k <= endPrice; k++) {
+            expectationMap.put(k, expectationContents[index++]);
         }
+
         this.toString();
         return expectationMap;
+    }
+
+    public void createNumberOfExpectation(int startPrice, int endPrice) {
+        expectation = new double[endPrice - startPrice + 1][endPrice - startPrice + 1];
+        expectationContents = new HashMap[endPrice - startPrice + 1];
+        for (int i = 0; i < expectationContents.length; i++) {
+            expectationContents[i] = new HashMap<>();
+        }
+        createExpectationArray(expectation);
+    }
+
+    public double[][] createExpectationArray(double[][] expectation) {
+        expectation[0][0] = 0.2;
+        expectation[0][1] = 0.8;
+        expectation[1][0] = 0.4;
+        expectation[1][1] = 0.6;
+        return expectation;
     }
 
     public double findExpectation(Map<Integer, Map<Integer, Double>> expectationMap) {

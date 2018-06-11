@@ -3,11 +3,11 @@ package main.java.de.Xiekang.Controllers;
 import main.java.de.Xiekang.Models.Battery;
 import main.java.de.Xiekang.Models.DecisionsOption;
 import main.java.de.Xiekang.Models.Market;
+import main.java.de.Xiekang.Models.Time;
 
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.List;
 
 public class TreeStructure {
@@ -24,12 +24,16 @@ public class TreeStructure {
     private int time;
 
     public TreeStructure() {
-        time = 2;
+        Time newTime = new Time(1, "12:00");
+        time = newTime.TimeCalculation();
+
         market = new Market(1, 2, 1);
         market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
+
         battery = new Battery(3, 2);
         StateGenerator stateGenerator = new StateGenerator();
         stateList = stateGenerator.createState(market, battery, time);
+
         createLeaves(time);
     }
 
@@ -120,12 +124,14 @@ public class TreeStructure {
             leaves[j] = new ArrayList<>();
         }
 
-        leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex++)));
+        leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex)));
         index1++;
+        specialIndex++;
         validateTheLengthOfList();
 
         for (int i = 1; i <= 3; i++) {
-            leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex++)));
+            leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex)));
+            specialIndex++;
         }
 
         index1++;
@@ -139,9 +145,10 @@ public class TreeStructure {
     public List[] createLeavesIterator() {
         for (int i = 0; i <= 1; i++) {
             int number = validateTheLengthOfList();
-            do {
-                leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex++)));
-            } while (leaves[index1].size() < number);
+            while (leaves[index1].size() < number && specialIndex < stateList.size()) {
+                leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex)));
+                specialIndex++;
+            }
             index1++;
         }
         return leaves;

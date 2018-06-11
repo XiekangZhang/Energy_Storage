@@ -3,6 +3,8 @@ package main.java.de.Xiekang.Controllers;
 import main.java.de.Xiekang.Models.Battery;
 import main.java.de.Xiekang.Models.DecisionsOption;
 import main.java.de.Xiekang.Models.Market;
+import main.java.de.Xiekang.Models.Time;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,7 @@ public class StateGenerator {
     private int specialIndex = 0;
     private boolean decisionFlag = true;
     private int sum = 1;
+
 
     public StateGenerator() {}
 
@@ -25,6 +28,7 @@ public class StateGenerator {
     }
 
     public State[] createInitialState(Market market, Battery battery, int time) {
+        //create the number of states are needed according to the time.
         state = new State[createNumberOfStates(market, time)];
         state[index] = new State(battery.getActualNumber(), new StateOfMarket<>(market.getDemand(), market.getStartsPrice(), 1));
         index++;
@@ -73,7 +77,12 @@ public class StateGenerator {
     }
 
     public State[] createStateAfterTime(Market market, Battery battery, int time) {
+        //new demand and expectation are needed by increasing the time
+        //market.setDemand(2);
+        //updateMarket(market);
+
         while (time > 0) {
+            updateMarket(market);
             for (int j = 0; j < needNumberOfStatesBeforeDecision(); j++) {
                 for (int i : market.expectationMap.keySet()) {
                     state[index] = (state[specialIndex + 1] == null) ?
@@ -84,12 +93,12 @@ public class StateGenerator {
                 specialIndex++;
             }
             time--;
-            createStateAfterDecision(market, battery, time);
+            createStateAfterDecision(market, battery);
         }
         return state;
     }
 
-    public State[] createStateAfterDecision(Market market, Battery battery, int time) {
+    public State[] createStateAfterDecision(Market market, Battery battery) {
         for (int i = 0; i < needNumberOfStatesBeforePrice(market); i++) {
             Battery batteryUpdate = (state[specialIndex + 1] == null) ? null :
                     new Battery(battery.getCapacity(), state[specialIndex + 1].getV1());
@@ -131,9 +140,15 @@ public class StateGenerator {
         return sum;
     }
 
+    public Market updateMarket(Market market) {
+        market.setDemand((int)(Math.random() * 10 + 1));
+        return market;
+    }
+
     @Override
     public String toString() {
         stateList.forEach(state -> System.out.println(state));
+        System.out.println(stateList.size());
         return super.toString();
     }
 }
