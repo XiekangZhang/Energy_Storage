@@ -1,9 +1,6 @@
 package main.java.de.Xiekang.Controllers;
 
-import main.java.de.Xiekang.Models.Battery;
-import main.java.de.Xiekang.Models.DecisionsOption;
-import main.java.de.Xiekang.Models.Market;
-import main.java.de.Xiekang.Models.Time;
+import main.java.de.Xiekang.Models.*;
 
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeNode;
@@ -22,17 +19,29 @@ public class TreeStructure {
     private Market market;
     private Battery battery;
     private int time;
+    private StateGenerator stateGenerator;
 
     public TreeStructure() {
-        Time newTime = new Time(1, "12:00");
-        time = newTime.TimeCalculation();
+        Time newTime = new Time(2, 10, TimeIntervalOption.Four_Hour);
+        this.time = newTime.TimeCalculation();
 
-        market = new Market(1, 2, 1);
-        market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
+        this.market = new Market(1, 2, 1);
+        this.market.createExpectation(market.getStartsPrice(), market.getEndsPrice());
 
-        battery = new Battery(3, 2);
-        StateGenerator stateGenerator = new StateGenerator();
-        stateList = stateGenerator.createStates(market, battery, time);
+        this.battery = new Battery(3, 2);
+        this.stateGenerator = new StateGenerator();
+    }
+
+    public void appendTreeStructure() {
+
+        stateList = this.stateGenerator.createStates(market, battery, time, TimeIntervalOption.Four_Hour);
+
+        createLeaves(time);
+    }
+
+    public void createTreeStructure() {
+
+        stateList = this.stateGenerator.createState(market, battery, time);
 
         createLeaves(time);
     }

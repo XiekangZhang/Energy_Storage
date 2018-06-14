@@ -3,6 +3,7 @@ package main.java.de.Xiekang.Controllers;
 import main.java.de.Xiekang.Models.Battery;
 import main.java.de.Xiekang.Models.DecisionsOption;
 import main.java.de.Xiekang.Models.Market;
+import main.java.de.Xiekang.Models.TimeIntervalOption;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,35 +20,36 @@ public class StateGenerator {
 
     public StateGenerator() {}
 
-    public List createStates(Market market, Battery battery, int time) {
+    public List createStates(Market market, Battery battery, int time, TimeIntervalOption option) {
         int timeTemp = time;
-        if (timeTemp > 2) {
-            createState(market, battery, 2);
-            stateOld = new State[createNumberOfStates(market, 2)];
+        if (timeTemp > TimeIntervalOption.changeOptionToInt(option)) {
+            createState(market, battery, TimeIntervalOption.changeOptionToInt(option));
+            stateOld = new State[createNumberOfStates(market, TimeIntervalOption.changeOptionToInt(option))];
             stateOld = state;
-            time -= 2;
+            time -= TimeIntervalOption.changeOptionToInt(option);
             reset();
 
-            while (time > 2) {
-                createInitialStates(market, battery, 2);
-                time -= 2;
+            while (time > TimeIntervalOption.changeOptionToInt(option)) {
+                createInitialStates(market, battery, TimeIntervalOption.changeOptionToInt(option));
+                time -= TimeIntervalOption.changeOptionToInt(option);
             }
 
             createInitialStates(market, battery, time);
 
 
-        } else if (timeTemp <= 2) {
+        } else if (timeTemp <= TimeIntervalOption.changeOptionToInt(option)) {
             createState(market, battery, time);
         }
         this.transferArrayToList();
         return stateList;
     }
 
-    public void createState(Market market, Battery battery, int time) {
+    public List createState(Market market, Battery battery, int time) {
         this.createInitialState(market, battery, time);
         this.createInitialStateAfterDecision(battery, specialIndex);
         this.createStateAfterTime(market, battery, time);
-
+        this.transferArrayToList();
+        return stateList;
     }
 
     public State[] createInitialState(Market market, Battery battery, int time) {

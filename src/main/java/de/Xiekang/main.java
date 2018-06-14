@@ -12,7 +12,8 @@ public class main {
 
     public static void main(String[] args) {
         TreeStructure treeStructure = new TreeStructure();
-
+        //treeStructure.appendTreeStructure();
+        treeStructure.createTreeStructure();
         // Der Wurzelknoten wird hergestellt
         TreeNode root = (treeStructure.createTree());
         //TreeNode root = treeTest();

@@ -2,55 +2,56 @@ package main.java.de.Xiekang.Models;
 
 public class Time {
     private int day;
-    private String timeInterval;
+    private int workingTime;
+    private TimeIntervalOption option;
 
     public Time() {
     }
 
-    public Time(int day, String timeInterval) {
+    public Time(int day, int workingTime, TimeIntervalOption option) {
         this.day = day;
-        this.timeInterval = timeInterval;
+        this.workingTime = workingTime;
+        this.option = option;
     }
 
     public int TimeCalculation() {
-        int time = (this.getDay() - 1) * 8;
+        int time = (this.getDay() - 1) * TimeIntervalOption.changeOptionToInt(this.getOption());
 
-        switch (this.getTimeInterval()) {
-            case "10:00": {
-                time += 1;
+        switch (this.getOption()) {
+            case One_Hour: {
+                int workingHour = 0;
+                for (int i = 9; i < this.getWorkingTime(); i++) {
+                    workingHour++;
+                }
+                time += workingHour;
                 break;
             }
-            case "11:00": {
-                time += 2;
+            case Two_Hour: {
+                int workingHour = 0;
+                for (int i = 9; i < this.getWorkingTime(); i += 2) {
+                    workingHour++;
+                }
+                time += workingHour;
                 break;
             }
-            case "12:00": {
-                time += 3;
+            case Four_Hour: {
+                int workingHour = 0;
+                for (int i = 9; i < this.getWorkingTime(); i += 4) {
+                    workingHour++;
+                }
+                time += workingHour;
                 break;
             }
-            case "13:00": {
-                time += 4;
+            case Eight_Hour: {
+                int workingHour = 0;
+                for (int i = 9; i < this.getWorkingTime(); i += 8) {
+                    workingHour++;
+                }
+                time += workingHour;
                 break;
             }
-            case "14:00": {
-                time += 5;
-                break;
-            }
-            case "15:00": {
-                time += 6;
-                break;
-            }
-            case "16:00": {
-                time += 7;
-                break;
-            }
-            case "17:00": {
-                time += 8;
-                break;
-            }
-            default: System.out.println("No one is working at the moment.");
+            default: System.out.println("No one is working");
         }
-
         return time;
     }
 
@@ -62,11 +63,19 @@ public class Time {
         this.day = day;
     }
 
-    public String getTimeInterval() {
-        return timeInterval;
+    public int getWorkingTime() {
+        return workingTime;
     }
 
-    public void setTimeInterval(String timeInterval) {
-        this.timeInterval = timeInterval;
+    public void setWorkingTime(int workingTime) {
+        this.workingTime = workingTime;
+    }
+
+    public TimeIntervalOption getOption() {
+        return option;
+    }
+
+    public void setOption(TimeIntervalOption option) {
+        this.option = option;
     }
 }
