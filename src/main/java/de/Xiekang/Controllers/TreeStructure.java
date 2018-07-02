@@ -11,7 +11,8 @@ public class TreeStructure {
 
     private DefaultMutableTreeNode root;
     private List<DefaultMutableTreeNode>[] leaves;
-    private List stateList = new ArrayList();
+    private List<State<Double, StateOfMarket<Integer, Integer, Double>>> stateList = new ArrayList();
+    protected List<State<Double, StateOfMarket<Integer, Integer, Double>>>[] states;
     private int specialIndex = 0;
     private int index = 1;
     private int index1 = 0;
@@ -22,7 +23,7 @@ public class TreeStructure {
     private StateGenerator stateGenerator;
 
     public TreeStructure() {
-        Time newTime = new Time(2, 10, TimeIntervalOption.Four_Hour);
+        Time newTime = new Time(1, 10, TimeIntervalOption.Four_Hour);
         this.time = newTime.TimeCalculation();
 
         this.market = new Market(1, 2, 1);
@@ -30,23 +31,18 @@ public class TreeStructure {
 
         this.battery = new Battery(3, 2);
         this.stateGenerator = new StateGenerator();
+        stateList = this.stateGenerator.createState(market, battery, time);
     }
 
     public void appendTreeStructure() {
 
         stateList = this.stateGenerator.createStates(market, battery, time, TimeIntervalOption.Four_Hour);
 
-        createLeaves(time);
+        createLeaves();
     }
 
-    public void createTreeStructure() {
 
-        stateList = this.stateGenerator.createState(market, battery, time);
-
-        createLeaves(time);
-    }
-
-    public TreeNode createTree() {
+    public DefaultMutableTreeNode createTree() {
         for (int i = 0; i < leaves.length - 1; i++) {
             if (i % 2 == 0) {
                 int d1 = 0;
@@ -109,6 +105,7 @@ public class TreeStructure {
                     for (int k = j + market.expectationMap.size() - 1; k > j; k--) {
                         if (leaves[i].get(j).toString().compareTo(leaves[i].get(k).toString()) == 0) {
                             leaves[i - 1].get(Math.floorDiv(j, market.expectationMap.size())).remove(leaves[i].get(j));
+                            states[i].remove(k);
                         }
                     }
                 }
@@ -117,6 +114,7 @@ public class TreeStructure {
                     for (int k = j + DecisionsOption.values().length - 1; k > j; k--) {
                         if (leaves[i].get(j).toString().compareTo(leaves[i].get(k).toString()) == 0) {
                             leaves[i - 1].get(Math.floorDiv(j, DecisionsOption.values().length)).remove(leaves[i].get(j));
+                            states[i].remove(k);
                         }
                     }
                 }
@@ -126,20 +124,24 @@ public class TreeStructure {
         return root;
     }
 
-    public List[] createLeaves(int time) {
+    public List[] createLeaves() {
         leaves = new ArrayList[(time + 1) * 2];
+        states = new ArrayList[(time + 1) * 2];
 
         for (int j = 0; j < leaves.length; j++) {
             leaves[j] = new ArrayList<>();
+            states[j] = new ArrayList<>();
         }
 
         leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex)));
+        states[index1].add(stateList.get(specialIndex));
         index1++;
         specialIndex++;
         validateTheLengthOfList();
 
         for (int i = 1; i <= 3; i++) {
             leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex)));
+            states[index1].add(stateList.get(specialIndex));
             specialIndex++;
         }
 
@@ -156,6 +158,7 @@ public class TreeStructure {
             int number = validateTheLengthOfList();
             while (leaves[index1].size() < number && specialIndex < stateList.size()) {
                 leaves[index1].add(new DefaultMutableTreeNode(stateList.get(specialIndex)));
+                states[index1].add(stateList.get(specialIndex));
                 specialIndex++;
             }
             index1++;
@@ -169,8 +172,30 @@ public class TreeStructure {
         return index;
     }
 
+//    public List[] clearDuplicate() {
+//        for (int i = 1; i < states.length; i++) {
+//            if (i % 2 == 0) {
+//                for (int j = 0; j < states[i].size(); j += market.expectationMap.size()) {
+//
+//                }
+//            }
+//        }
+//    }
+//
+
     @Override
     public String toString() {
+        for (int i = 0; i < states.length; i++) {
+            for (int j = 0; j < states[i].size(); j++) {
+                System.out.print(states[i].get(j));
+            }
+            System.out.println();
+        }
+
         return super.toString();
+    }
+
+    public List<State<Double, StateOfMarket<Integer, Integer, Double>>>[] getStates() {
+        return states;
     }
 }

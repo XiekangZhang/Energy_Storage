@@ -37,6 +37,6 @@ public class StateOfMarket<D, P, E> {
 
     @Override
     public String toString() {
-        return "(" + demand + ", " + price + ", " + expectation + ") ";
+        return "(" + demand + ", " + price + ", " + expectation + ")";
     }
 }

@@ -192,7 +192,9 @@ public class StateGenerator {
 
     @Override
     public String toString() {
-        stateList.forEach(state -> System.out.println(state));
+        System.out.println(stateList.size());
+        for (State state : stateList)
+            System.out.println(state);
         return super.toString();
     }
 }
