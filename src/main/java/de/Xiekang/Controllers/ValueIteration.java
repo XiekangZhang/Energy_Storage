@@ -1,12 +1,14 @@
 package main.java.de.Xiekang.Controllers;
 
+import main.java.de.Xiekang.Models.DecisionsOption;
+import main.java.de.Xiekang.Models.Market;
+
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreeNode;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
+
+import static main.java.de.Xiekang.Controllers.Node.printTree;
 
 /**
  * TODO
@@ -17,15 +19,15 @@ import java.util.List;
  */
 public class ValueIteration extends TreeStructure {
 
-    private double values;
-    private HashMap<Double, State<Double, StateOfMarket<Integer, Integer, Double>>> path = new HashMap<>();
     private DefaultMutableTreeNode defaultMutableTreeNode;
     private TreeStructure treeStructure;
+    private Node<State<Double, StateOfMarket<Integer, Integer, Double>>> node;
 
     public DefaultMutableTreeNode init() {
         treeStructure = new TreeStructure();
         treeStructure.createLeaves();
         defaultMutableTreeNode = treeStructure.createTree();
+        printTree(treeStructure.root1, " ");
         return defaultMutableTreeNode;
     }
 
@@ -46,19 +48,16 @@ public class ValueIteration extends TreeStructure {
         init();
     }
 
-    public HashMap calculateValue() {
+    public void calculateValue() {
+        //n : 0..3
+        int n = defaultMutableTreeNode.getDepth();
+
+        //the number of paths
+        List<Double> values = new ArrayList<>();
+        double value = 0;
+
         //initialize
-        values = 0;
-        path.put(values, treeStructure.getStates()[0].get(0));
 
-        //first iteration
-        return path;
     }
 
-    public String toString() {
-        for (State state : path.values()) {
-            System.out.print(state);
-        }
-        return null;
-    }
 }

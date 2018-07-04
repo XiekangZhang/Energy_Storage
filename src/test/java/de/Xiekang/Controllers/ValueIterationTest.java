@@ -11,6 +11,5 @@ public class ValueIterationTest {
     public void calculateValue() {
         ValueIteration valueIteration = new ValueIteration();
         valueIteration.calculateValue();
-        valueIteration.toString();
     }
 }

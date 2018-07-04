@@ -1,39 +1,99 @@
 package main.java.de.Xiekang.Controllers;
 
+import java.util.ArrayList;
+import java.util.List;
 
-import javax.swing.tree.DefaultMutableTreeNode;
-import java.util.Comparator;
+public class Node<T> {
+    private T data = null;
+    private List<Node<T>> children = new ArrayList<>();
+    private Node<T> parent = null;
 
-@Deprecated
-class Node extends DefaultMutableTreeNode {
-
-    public Node() {
-        super();
+    public Node(T data) {
+        this.data = data;
     }
 
-    public Node(Object newChild) {
-        super(newChild);
+    public Node<T> addChild(Node<T> child) {
+        child.setParent(this);
+        this.children.add(child);
+        return child;
     }
 
-
-    public void insert(DefaultMutableTreeNode newChild, int childIndex) {
-        super.insert(newChild, childIndex);
+    public void addChildren(List<Node<T>> children) {
+        children.forEach(each -> each.setParent(this));
+        this.children.addAll(children);
     }
 
-    protected static Comparator nodeComparator = new Comparator() {
-        @Override
-        public int compare(Object o1, Object o2) {
-            return o1.toString().compareToIgnoreCase(o2.toString());
+    public static <T> void printTree(Node<T> node, String appender) {
+        System.out.println(appender + node.getData());
+        node.getChildren().forEach(each -> printTree(each, appender + appender));
+    }
+
+    public Node<T> getRoot() {
+        if (parent == null) {
+            return this;
         }
+        return parent.getRoot();
+    }
 
-        @Override
-        public boolean equals(Object obj) {
-            return false;
+    public void deleteNode() {
+        if (parent != null) {
+            int index = this.parent.getChildren().indexOf(this);
+            this.parent.getChildren().remove(this);
+            for (Node<T> each : getChildren()) {
+                each.setParent(this.parent);
+            }
+            this.parent.getChildren().addAll(index, this.getChildren());
+        } else {
+            deleteRootNode();
         }
-    };
+        this.getChildren().clear();
+    }
 
-    @Override
-    public String toString() {
-        return super.toString();
+    public Node<T> deleteRootNode() {
+        if (parent != null) {
+            throw new IllegalStateException("deleteRootNode not called on root");
+        }
+        Node<T> newParent = null;
+        if (!getChildren().isEmpty()) {
+            newParent = getChildren().get(0);
+            newParent.setParent(null);
+            getChildren().remove(0);
+            for (Node<T> each : getChildren()) {
+                each.setParent(newParent);
+            }
+            newParent.getChildren().addAll(getChildren());
+        }
+        this.getChildren().clear();
+        return newParent;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public List<Node<T>> getChildren() {
+        return children;
+    }
+
+    public void setChildren(List<Node<T>> children) {
+        this.children = children;
+    }
+
+    public Node<T> getParent() {
+        return parent;
+    }
+
+    public void setParent(Node<T> parent) {
+        this.parent = parent;
+    }
+
+    public void remove(Node<T> stateNode) {
+        if (parent != stateNode && children.contains(stateNode)) {
+            children.remove(stateNode);
+        }
     }
 }
