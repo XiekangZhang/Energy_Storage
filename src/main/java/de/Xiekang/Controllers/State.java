@@ -13,6 +13,8 @@ public class State<V1, V2> {
         this.v2 = v2;
     }
 
+    public State() {}
+
     public V1 getV1() {
         return v1;
     }

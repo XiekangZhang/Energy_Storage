@@ -84,7 +84,10 @@ public class Node<T> {
     }
 
     public Node<T> getParent() {
-        return parent;
+        if (parent != null) {
+            return parent;
+        }
+        return null;
     }
 
     public void setParent(Node<T> parent) {

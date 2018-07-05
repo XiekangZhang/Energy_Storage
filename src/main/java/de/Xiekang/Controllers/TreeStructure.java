@@ -211,7 +211,7 @@ public class TreeStructure {
             System.out.println();
         }
 
-        return super.toString();
+        return null;
     }
 
     public List<State<Double, StateOfMarket<Integer, Integer, Double>>>[] getStates() {

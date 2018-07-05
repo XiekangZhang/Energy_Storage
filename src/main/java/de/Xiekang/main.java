@@ -33,7 +33,7 @@ public class main {
 //        frame.setVisible( true );
 
         ValueIteration valueIteration = new ValueIteration();
-        valueIteration.calculateValue();
+
         valueIteration.showTreeStructure();
     }
 

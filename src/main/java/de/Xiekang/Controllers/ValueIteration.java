@@ -21,7 +21,10 @@ public class ValueIteration extends TreeStructure {
 
     private DefaultMutableTreeNode defaultMutableTreeNode;
     private TreeStructure treeStructure;
-    private Node<State<Double, StateOfMarket<Integer, Integer, Double>>> node;
+    private Node<State<Double, StateOfMarket<Integer, Integer, Double>>> child;
+    private List<State<Double, String>> path = new ArrayList<>();
+    private List<Double> values = new ArrayList<>();
+    private double value= 0;
 
     public DefaultMutableTreeNode init() {
         treeStructure = new TreeStructure();
@@ -46,18 +49,46 @@ public class ValueIteration extends TreeStructure {
 
     public ValueIteration() {
         init();
+        child = treeStructure.getRoot1();
+
+        findTheDepthChildren(child);
+        this.toString();
     }
 
-    public void calculateValue() {
-        //n : 0..3
-        int n = defaultMutableTreeNode.getDepth();
-
-        //the number of paths
-        List<Double> values = new ArrayList<>();
-        double value = 0;
-
-        //initialize
-
+    public void findTheDepthChildren(Node<State<Double, StateOfMarket<Integer, Integer, Double>>> child) {
+        if (!child.getChildren().isEmpty() && child.getChildren().get(0).getChildren().isEmpty()) {
+            calculateValueIteration(child);
+        } else {
+            child.getChildren().forEach(c1 -> findTheDepthChildren(c1));
+        }
     }
 
+    public void calculateValueIteration(Node<State<Double, StateOfMarket<Integer, Integer, Double>>> child) {
+
+        while (child.getParent() != null) {
+            for (int i = 0; i < child.getChildren().size(); i++) {
+                path.add(new State<>(value, child.getChildren().get(i).getData().toString()));
+                values.add((child.getData().getV1() - child.getChildren().get(i).getData().getV1()) *
+                        child.getData().getV2().getExpectation() *
+                        child.getData().getV2().getPrice());
+            }
+            value = Collections.max(values);
+            values.clear();
+
+            child = child.getParent();
+            calculateValueIteration(child);
+        }
+    }
+
+
+    public void printTest(Node<State<Double, StateOfMarket<Integer, Integer, Double>>> child) {
+        System.out.println(child.getData().toString());
+    }
+
+    @Override
+    public String toString() {
+        path.forEach(state -> System.out.println(state.toString()));
+        System.out.println(path.size());
+        return "calculating...";
+    }
 }

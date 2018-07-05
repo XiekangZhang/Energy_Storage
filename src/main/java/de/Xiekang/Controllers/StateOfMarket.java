@@ -1,37 +1,37 @@
 package main.java.de.Xiekang.Controllers;
 
 public class StateOfMarket<D, P, E> {
-    private D demand;
-    private E expectation;
-    private P price;
+    private int demand;
+    private double expectation;
+    private int price;
 
-    public StateOfMarket(D demand, P price,  E expectation) {
+    public StateOfMarket(int demand, int price,  double expectation) {
         this.demand = demand;
         this.expectation = expectation;
         this.price = price;
     }
 
-    public D getDemand() {
+    public int getDemand() {
         return demand;
     }
 
-    public void setDemand(D demand) {
+    public void setDemand(int demand) {
         this.demand = demand;
     }
 
-    public E getExpectation() {
+    public double getExpectation() {
         return expectation;
     }
 
-    public void setExpectation(E expectation) {
+    public void setExpectation(double expectation) {
         this.expectation = expectation;
     }
 
-    public P getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(P price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

@@ -10,6 +10,7 @@ public class ValueIterationTest {
     @Test
     public void calculateValue() {
         ValueIteration valueIteration = new ValueIteration();
-        valueIteration.calculateValue();
+//        valueIteration.calculateValue();
+        valueIteration.toString();
     }
 }
